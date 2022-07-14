@@ -1,3 +1,81 @@
 .hero {
-    background-color: darkorchid;
+  background-color: $secondary-background-color;
+
+  padding-top: 136px;
+  padding-bottom: 158px;
+
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.hero__conteiner::before {
+  content: '';
+  position: absolute;
+  background-color: $secondary-title-color;
+  border-radius: 50%;
+  width: 346px;
+  height: 344px;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-36%, -50%);
+  z-index: -1;
+}
+
+.hero__title {
+  font-family: 'Titan One', 'cursive';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $primary-inverse-text-color;
+  display: inline-block;
+
+  width: 220px;
+
+  z-index: 0;
+  margin-bottom: 20px;
+}
+.title--color__cherry {
+  color: $accent-color;
+  font-size: 48px;
+}
+
+.hero__ul {
+  display: flex;
+}
+.hero__list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button--color__cherry {
+  background-color: $accent-color;
+  color: $primary-inverse-text-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $primary-inverse-text-color;
+  }
+}
+
+.button--color__white {
+  background-color: $primary-background-color;
+  color: $accent-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $primary-inverse-text-color;
+  }
+}
+.hero__button {
+  font-size: 8px;
+  line-height: 1.25;
+  box-sizing: border-box;
+  height: 24px;
+
+  padding-left: 14px;
+  padding-right: 14px;
 }
