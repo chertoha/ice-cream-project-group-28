@@ -1,5 +1,5 @@
 .hero {
-  background-color: $secondary-background-color;
+  background-color: #ffb8ca;
 
   padding-top: 136px;
   padding-bottom: 158px;
@@ -7,6 +7,27 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
+}
+
+.hero__conteiner::after {
+  content: '';
+  width: 171px;
+  height: 410px;
+  position: absolute;
+  background-image: url(/src/images/hero-header/mobile/header-ice-mob-x1.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/hero-header/mobile/header-ice-mob-x2.png);
+    background-size: contain;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-36%, 0);
+
+  z-index: -1;
 }
 
 .hero__conteiner::before {
@@ -20,7 +41,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-36%, -50%);
-  z-index: -1;
+  z-index: -2;
 }
 
 .hero__title {
