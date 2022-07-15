@@ -1,11 +1,7 @@
 <header class="header">
   <div class="header__container container">
     <a class="header__logo-link">
-      <img 
-      src="./images/hero-header/logo.svg" 
-      alt="logo" 
-      class="header_logo"
-      width="199" height="50"/>
+      <img src="./images/hero-header/logo.svg" alt="logo" class="header_logo" width="199" height="50" />
     </a>
 
     <button class="mob-menu__open-btn button" type="button">
@@ -42,6 +38,29 @@
     </button>
   </div>
 
+  <div class="mob-menu__modal--backdrop mob-menu__modal--is-hidden" data-modal>
+    <div class="mob-menu__modal">
+      <button data-modal-close class="mob-menu__modal--close-btn">
+        <svg class="mob-menu__modal--close-icon">
+          <use href="./images/modal-icons.svg#products-close-button"></use>
+        </svg>
+      </button>
+      <h2 class="mob-menu__modal--heading">Choose what you like</h2>
+      <ul class="mob-menu__modal--listing-products">
+        <li><svg class="mob-menu__modal--product-pict">
+            <use href="./images/modal-icons.svg#icecream1"></use>
+          </svg></li>
+        <li><svg class="mob-menu__modal--product-pict">
+            <use href="./images/modal-icons.svg#icecream2"></use>
+          </svg></li>
+        <li><svg class="mob-menu__modal--product-pict">
+            <use href="./images/modal-icons.svg#icecream3"></use>
+          </svg></li>
+
+      </ul>
+    </div>
+  </div>
+
   <div class="backdrop-mob is-hidden">
     <div class="mob-menu">
       <div class="mob-menu__wrapper">
@@ -53,7 +72,7 @@
           </svg>
         </button>
 
-        <button class="mob-menu__buy-btn">
+        <button data-modal-open class="mob-menu__buy-btn">
           <span class="mob-menu__buy-text">Buy now</span>
           <span>
             <svg class="mob-menu__buy-icon" width="7" height="10">
@@ -61,6 +80,7 @@
             </svg>
           </span>
         </button>
+
 
         <ul class="mob-menu__list list">
           <li class="mob-menu__item">
