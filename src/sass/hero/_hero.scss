@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.hero__conteiner::after {
+.hero__container::after {
   content: '';
   width: 171px;
   height: 410px;
@@ -30,7 +30,7 @@
   z-index: -1;
 }
 
-.hero__conteiner::before {
+.hero__container::before {
   content: '';
   position: absolute;
   background-color: $secondary-title-color;
@@ -46,7 +46,7 @@
 
 .hero__title {
   font-family: 'Titan One', 'cursive';
-  font-style: normal;
+
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -60,7 +60,7 @@
   z-index: 0;
   margin-bottom: 20px;
 }
-.title--color__cherry {
+.hero__subtitle {
   color: $accent-color;
   font-size: 48px;
 }
