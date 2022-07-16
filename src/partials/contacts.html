@@ -26,27 +26,27 @@
         </ul>
       </li>
       <li class="contacts__card">
-      <ul class="card">
-        <p class="card__type">foodtruck</p>
-        <li class="card__content">
-          <p class="card__location">Los Angeles</p>
-          <p class="card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
-        </li>
-        <li class="card__content">
-          <div class="card__weekdays">
-            <p class="card__days">Monday - Friday</p>
-            <p class="card__time">06:00 AM - 10:00 PM</p>
-          </div>
-          <div class="card__weekends">
-            <p class="card__days">Saturday - Sunday</p>
-            <p class="card__time">08:00 AM - 16:00 PM</p>
-          </div>
-        </li>
-        <li class="card__content">
-          <a class="link" href="tel:+610383766284">+61 (0) 383 766 284</a>
-          <a class="link" href="mailto:noreply@envato.com">noreply@envato.com</a>
-        </li>
-      </ul>
+        <ul class="card">
+          <p class="card__type">foodtruck</p>
+          <li class="card__content">
+            <p class="card__location">Los Angeles</p>
+            <p class="card__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
+          </li>
+          <li class="card__content">
+            <div class="card__weekdays">
+              <p class="card__days">Monday - Friday</p>
+              <p class="card__time">06:00 AM - 10:00 PM</p>
+            </div>
+            <div class="card__weekends">
+              <p class="card__days">Saturday - Sunday</p>
+              <p class="card__time">08:00 AM - 16:00 PM</p>
+            </div>
+          </li>
+          <li class="card__content">
+            <a class="link" href="tel:+610383766284">+61 (0) 383 766 284</a>
+            <a class="link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          </li>
+        </ul>
       </li>
       <li class="contacts__card">
         <ul class="card">
@@ -74,20 +74,134 @@
     </ul>
     <ul class="contacts__modal-btn">
       <li>
-        <button class="button button--with-hover">
+        <button locations-modal-open class="button button--with-hover">
           Our Locations
           <svg class="contacts__icon" width="8" height="10">
             <use href="./images/icons.svg#icon-header-arrow-btn"></use>
           </svg>
         </button>
+        <div class="contact__locations-modal--backdrop contact__locations-modal--is-hidden" locations-modal>
+          <div class="modal-default-container">
+            <button locations-modal-close class="contact__locations-modal--close-btn">
+              <svg class="contact__locations-modal--close-icon">
+                <use href="./images/modal-icons.svg#products-close-button"></use>
+              </svg>
+            </button>
+            <h2 class="contact__locations-modal--heading">Our locations</h2>
+            <ul class="contact_locations__card-list">
+              <li class="contact_locations-card">
+                <h3 class="contact__locations-modal--sub-heading">New York</h3>
+                <h4 class="contact__locations-modal--sub-heading2">Manhattan Mall</h4>
+                <span class="contact__locations-modal--address">100 W 33rd St, New York, NY 10001, US</span>
+                <a class="contact__locations-modal--text" href="https://goo.gl/maps/FP3681EWaUSJPdXm6">how to find</a>
+              </li class="contact_locations-card">
+              <li class="contact_locations-card">
+                <h3 class="contact__locations-modal--sub-heading">London</h3>
+                <h4 class="contact__locations-modal--sub-heading2">Covent Garden</h4>
+                <span class="contact__locations-modal--address">14 James St, London WC2E 8BU, UK</span>
+                <a class="contact__locations-modal--text" href="https://g.page/covent-garden-london?share">how to
+                  find</a>
+              </li>
+              <li class="contact_locations-card">
+                <h3 class="contact__locations-modal--sub-heading">Berlin</h3>
+                <h4 class="contact__locations-modal--sub-heading2">Mercedes Platz</h4>
+                <span class="contact__locations-modal--address">Mühlenstraße 5, 10243 Berlin, Germany</span>
+                <a class="contact__locations-modal--text" href="https://goo.gl/maps/5JnRTD1Htr5awVuFA" type="_blank">how
+                  to find</a>
+              </li>
+              <li class="contact_locations-card">
+                <h3 class="contact__locations-modal--sub-heading">Paris</h3>
+                <h4 class="contact__locations-modal--sub-heading2">Galerie Vivienne</h4>
+                <span class="contact__locations-modal--address">5 Rue de la Banque, 75002 Paris, France</span>
+                <a class="contact__locations-modal--text" href="https://goo.gl/maps/GhdxaN1eFPjk9Q5ZA">how to find</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </li>
       <li>
-        <button class="button button--with-hover">
+        <button franchise-modal-open class="button button--with-hover">
           Franchise
           <svg class="contacts__icon" width="8" height="10">
             <use href="./images/icons.svg#icon-header-arrow-btn"></use>
           </svg>
         </button>
+
+        <div class="contact__franchise-modal--backdrop contact__franchise-modal--is-hidden" franchise-modal>
+          <div class="modal-default-container">
+            <button franchise-modal-close class="contact__locations-modal--close-btn">
+              <svg class="contact__locations-modal--close-icon">
+                <use href="./images/modal-icons.svg#products-close-button"></use>
+              </svg>
+            </button>
+            <h2 class="contact__locations-modal--heading">Eager to work with us?</h2>
+            <h3 class="contact__locations-modal--sub-heading">Obtain
+              access to our
+              business
+              knowledge, and trademark, just be becoming a part of us just for:</h3>
+            <ul class="contact__franchise-description">
+              <li>initial
+                start-up fee - USD 50.00</li>
+              <li>annual licensing fee - USD 15.00</li>
+            </ul>
+
+
+            <form class="contact__franchise-form">
+              <h3 class="contact__locations-modal--sub-heading">Interested? Let's get in touch:</h3>
+              <ul class="contact__franchise-form-field-list">
+
+
+                <li class="contact__franchise-form-field">
+                  <label for="name">Name</label>
+                  <div class="contact__franchise-field-container">
+                    <svg class="contact__franchise-field-icon">
+                      <use href="./images/modal-icons.svg#form-name"></use>
+                    </svg>
+                    <input type="text" name="name" id="contact__franchise-form-name" />
+                  </div>
+                </li>
+
+                <li class="contact__franchise-form-field">
+                  <label for="tel">Phone</label>
+                  <div class="contact__franchise-field-container">
+                    <svg class="contact__franchise-field-icon">
+                      <use href="./images/modal-icons.svg#form-phone"></use>
+                    </svg>
+                    <input type="tel" name="tel" id="contact__franchise-form-tel" />
+                  </div>
+                </li>
+
+                <li class="contact__franchise-form-field">
+                  <label for="mail">Email</label>
+                  <div class="contact__franchise-field-container">
+                    <svg class="contact__franchise-field-icon">
+                      <use href="./images/modal-icons.svg#form-email"></use>
+                    </svg>
+                    <input type="email" name="mail" id="contact__franchise-form-mail" />
+                  </div>
+                </li>
+                <li class="contact__franchise-form-field">
+                  <label for="comment">Comment</label>
+                  <textarea name="comment" id="comment" cols="5" rows="2" class="contact__franchise-form-textarea"
+                    placeholder="Leave your comment here"></textarea>
+                </li>
+              </ul>
+
+
+              <!-- <button type="submit" class="button">Send</button> -->
+
+              <button type="submit" class="contact__franchise-submit-button">
+                Send
+                <svg class="contacts__icon" width="8" height="10">
+                  <use href="./images/icons.svg#icon-header-arrow-btn"></use>
+                </svg>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
       </li>
     </ul>
   </div>

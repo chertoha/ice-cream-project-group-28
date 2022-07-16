@@ -39,25 +39,78 @@
   </div>
 
   <div class="mob-menu__modal--backdrop mob-menu__modal--is-hidden" data-modal>
-    <div class="mob-menu__modal">
+    <div class="modal-default-container">
       <button data-modal-close class="mob-menu__modal--close-btn">
-        <svg class="mob-menu__modal--close-icon">
+        <svg class="contact__locations-modal--close-icon">
           <use href="./images/modal-icons.svg#products-close-button"></use>
         </svg>
       </button>
+
       <h2 class="mob-menu__modal--heading">Choose what you like</h2>
       <ul class="mob-menu__modal--listing-products">
-        <li><svg class="mob-menu__modal--product-pict">
-            <use href="./images/modal-icons.svg#icecream1"></use>
-          </svg></li>
-        <li><svg class="mob-menu__modal--product-pict">
-            <use href="./images/modal-icons.svg#icecream2"></use>
-          </svg></li>
-        <li><svg class="mob-menu__modal--product-pict">
-            <use href="./images/modal-icons.svg#icecream3"></use>
-          </svg></li>
-
+        <li class="mob-menu__modal-card">
+          <h3>Heading3</h3>
+          <img src="./images/gallery/tablet/gall-nine-koffee-tab-x1.png" alt="">
+          <svg class="mob-menu__modal-card-icon">
+            <use href="./images/modal-icons.svg#modal-like"></use>
+          </svg>
+          <div class="mob-menu__modal--stepper">
+            <span class="stepper">
+              <button>–</button>
+              <input type="number" id="stepper" value="0" min="0" max="100" step="1" readonly>
+              <button>+</button>
+            </span>
+          </div>
+        </li>
+        <li class="mob-menu__modal-card">
+          <h3>Heading3</h3>
+          <img src="./images/gallery/tablet/gall-seven-icehand-tab-x1.png" alt="">
+          <svg class="mob-menu__modal-card-icon">
+            <use href="./images/modal-icons.svg#modal-like"></use>
+          </svg>
+          <div class="mob-menu__modal--stepper">
+            <span class="stepper">
+              <button>–</button>
+              <input type="number" id="stepper" value="0" min="0" max="100" step="1" readonly>
+              <button>+</button>
+            </span>
+          </div>
+        </li>
+        <li class="mob-menu__modal-card">
+          <h3>Heading3</h3>
+          <img src="./images/gallery/tablet/gall-three-icelolly-tab-x1.png" alt="">
+          <svg class="mob-menu__modal-card-icon">
+            <use href="./images/modal-icons.svg#modal-like"></use>
+          </svg>
+          <div class="mob-menu__modal--stepper">
+            <span class="stepper">
+              <button>–</button>
+              <input type="number" id="stepper" value="0" min="0" max="100" step="1" readonly>
+              <button>+</button>
+            </span>
+          </div>
+        </li>
+        <li class="mob-menu__modal-card">
+          <h3>Heading3</h3>
+          <img src="./images/gallery/tablet/gall-two-ice-tab-x1.png" alt="">
+          <svg class="mob-menu__modal-card-icon">
+            <use href="./images/modal-icons.svg#modal-like"></use>
+          </svg>
+          <div class="mob-menu__modal--stepper">
+            <span class="stepper">
+              <button>–</button>
+              <input type="number" id="stepper" value="0" min="0" max="100" step="1" readonly>
+              <button>+</button>
+            </span>
+          </div>
+        </li>
       </ul>
+      <button type="submit" class="contact__franchise-submit-button">
+        Proceed
+        <svg class="contacts__icon" width="8" height="10">
+          <use href="./images/icons.svg#icon-header-arrow-btn"></use>
+        </svg>
+      </button>
     </div>
   </div>
 
